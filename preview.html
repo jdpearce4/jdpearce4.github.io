@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Website Preview</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/katex.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/katex.min.js"></script>
+</head>
+<body class="bg-gray-50">
+    <nav class="border-b border-gray-200 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="flex justify-between items-center h-16">
+                <div class="text-xl font-bold">James Pearce</div>
+                <div class="flex space-x-8">
+                    <a href="#" class="text-blue-600 font-medium">Home</a>
+                    <a href="#" class="text-gray-600 hover:text-blue-600">Astrophotography</a>
+                    <a href="#" class="text-gray-600 hover:text-blue-600">Blog</a>
+                    <a href="#" class="text-gray-600 hover:text-blue-600">Writing</a>
+                    <a href="#" class="text-gray-600 hover:text-blue-600">About</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container mx-auto px-4 py-8">
+        <section class="text-center py-20">
+            <h1 class="text-5xl font-bold mb-6">Welcome to My Universe</h1>
+            <p class="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
+                Exploring the cosmos through astrophotography and sharing insights through writing and research.
+            </p>
+            <div class="flex gap-4 justify-center">
+                <button class="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg">
+                    View Astrophotography
+                </button>
+                <button class="border border-gray-300 hover:bg-gray-50 px-6 py-3 rounded-lg">
+                    About Me
+                </button>
+            </div>
+        </section>
+
+        <section class="grid md:grid-cols-3 gap-8 py-16">
+            <div class="text-center p-6 bg-white rounded-lg shadow">
+                <h2 class="text-2xl font-semibold mb-4">Astrophotography</h2>
+                <p class="text-gray-600 mb-4">
+                    High-resolution 6K captures of deep space objects, planets, and celestial events.
+                </p>
+                <a href="#" class="text-blue-600 hover:text-blue-700 font-medium">
+                    Explore Gallery →
+                </a>
+            </div>
+            
+            <div class="text-center p-6 bg-white rounded-lg shadow">
+                <h2 class="text-2xl font-semibold mb-4">Blog</h2>
+                <p class="text-gray-600 mb-4">
+                    Technical articles with LaTeX support: <span id="math-inline"></span>
+                </p>
+                <a href="#" class="text-blue-600 hover:text-blue-700 font-medium">
+                    Read Posts →
+                </a>
+            </div>
+            
+            <div class="text-center p-6 bg-white rounded-lg shadow">
+                <h2 class="text-2xl font-semibold mb-4">Writing</h2>
+                <p class="text-gray-600 mb-4">
+                    Academic papers with mathematical notation and research notes.
+                </p>
+                <a href="#" class="text-blue-600 hover:text-blue-700 font-medium">
+                    View Writing →
+                </a>
+            </div>
+        </section>
+
+        <section class="bg-white rounded-lg p-8 mt-8">
+            <h2 class="text-3xl font-bold mb-4">LaTeX Math Example</h2>
+            <p class="mb-4">Inline equation: <span id="math-example-1"></span></p>
+            <p class="mb-4">Block equation:</p>
+            <div id="math-example-2" class="text-center my-6"></div>
+        </section>
+    </main>
+
+    <script>
+        // Render LaTeX examples
+        katex.render("E = mc^2", document.getElementById('math-inline'));
+        katex.render("SNR = \\frac{S}{\\sqrt{S + D + R^2}}", document.getElementById('math-example-1'));
+        katex.render("L_\\lambda(t) = \\int_0^{M_{up}} \\phi(m) \\cdot S_\\lambda(m, t, Z) \\cdot dm", document.getElementById('math-example-2'), {displayMode: true});
+    </script>
+</body>
+</html>
