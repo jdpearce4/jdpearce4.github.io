@@ -3,7 +3,18 @@
     "title": "Bodies in Motion - Part 1",
     "date": "2024-12-01",
     "type": "Novella",
-    "excerpt": "A psychological thriller about a woman who discovers she has the ability to read other people's minds in a corporate office setting. Carol navigates her mundane job while secretly exploring the rich inner lives of her coworkers.",
-    "tags": ["cosmic horror", "science fiction", "psychological thriller", "mind reading"]
+    "excerpt": "A psychological thriller about a woman who discovers she has the ability to read other people's minds in a corporate office setting. Carol navigates her mundane job while secretly exploring the rich inner lives of her coworkers."
+  },
+  "a-simple-question.pdf": {
+    "title": "A Simple Question",
+    "date": "2024-07-15",
+    "type": "Short Story",
+    "excerpt": "My answer to Isaac Asimov's \"The Last Question\"—when we defer to authority, entropy only increases."
+  },
+  "autonomous-trolly-problem.pdf": {
+    "title": "The Autonomous Trolley Problem",
+    "date": "2024-08-20",
+    "type": "Short Story", 
+    "excerpt": "A modern twist on the classic ethical dilemma—will we accept moral responsibility for our creations, or will we allow the trolley to jump the tracks?"
   }
 }
