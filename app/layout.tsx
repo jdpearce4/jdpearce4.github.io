@@ -6,8 +6,8 @@ import Navigation from '@/components/Navigation'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'James Pearce - Astrophotographer & Writer',
-  description: 'Personal website showcasing astrophotography, writing, and blog posts with LaTeX support',
+  title: 'James Pearce - Astrophotographer',
+  description: 'Deep space astrophotography gallery featuring emission nebulae, supernova remnants, and galactic structures',
 }
 
 export default function RootLayout({

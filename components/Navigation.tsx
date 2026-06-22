@@ -7,11 +7,7 @@ export default function Navigation() {
   const pathname = usePathname()
   
   const links = [
-    { href: '/', label: 'Home' },
-    { href: '/astrophotography', label: 'Astrophotography' },
-    { href: '/blog', label: 'Blog' },
-    { href: '/writing', label: 'Creative Writing' },
-    { href: '/about', label: 'About' },
+    { href: '/astrophotography', label: 'Gallery' },
   ]
 
   // Function to check if current path matches or starts with the link path
@@ -24,12 +20,7 @@ export default function Navigation() {
 
   // Function to get dynamic subtitle based on current page
   const getSubtitle = () => {
-    if (pathname === '/') return '' // No subtitle on home page
-    if (pathname.startsWith('/astrophotography')) return 'Astrophotographer'
-    if (pathname.startsWith('/writing')) return 'Writer'
-    if (pathname.startsWith('/blog')) return 'Blogger'
-    if (pathname.startsWith('/about')) return 'Research Scientist'
-    return 'Astrophotographer' // Default for other pages
+    return 'Astrophotographer'
   }
 
   return (
