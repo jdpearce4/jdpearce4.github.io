@@ -487,7 +487,7 @@ export default async function PhotoDetail({ params }: { params: Promise<{ slug: 
                 sizes="(max-width: 1024px) 100vw, 80vw"
               />
               {/* Cosmic glow overlay */}
-              <div className="absolute inset-0 bg-gradient-to-br from-amber-500/10 via-transparent to-violet-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+              <div className="absolute inset-0 bg-gradient-to-br from-amber-500/10 via-transparent to-violet-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none"></div>
             </div>
             
             <div className="text-center mb-8">

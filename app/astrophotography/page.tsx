@@ -248,46 +248,6 @@ export default function Astrophotography() {
           ))}
         </div>
       </div>
-
-      {/* Cosmic about section */}
-      <div className="mt-16 mx-4 relative z-10">
-        <div className="bg-gradient-to-br from-gray-800/40 to-gray-900/40 rounded-2xl p-8 border border-gray-700/30 backdrop-blur-md">
-          <h2 className="text-3xl font-bold mb-6 text-center bg-gradient-to-r from-amber-400 via-cyan-400 to-violet-400 bg-clip-text text-transparent">
-            🌟 Capturing the Infinite
-          </h2>
-          <div className="grid md:grid-cols-2 gap-8 text-gray-300">
-            <div>
-              <p className="mb-4 leading-relaxed">
-                Each cosmic masterpiece emerges from specialized astrophotography equipment designed for 
-                long-exposure deep space imaging. The pristine 6K resolution unveils intricate stellar 
-                structures, glowing nebular regions, and majestic galactic spirals spanning thousands of light-years.
-              </p>
-              <p className="leading-relaxed">
-                From the Heart Nebula's 19-hour integration to the Veil's 33-hour marathon, every photon 
-                captured tells the story of stellar birth, death, and the eternal cosmic dance.
-              </p>
-            </div>
-            <div className="space-y-4">
-              <div className="flex items-center gap-3">
-                <span className="w-3 h-3 bg-gradient-to-r from-amber-400 to-yellow-400 rounded-full"></span>
-                <span>Narrowband SHO & HOO techniques</span>
-              </div>
-              <div className="flex items-center gap-3">
-                <span className="w-3 h-3 bg-gradient-to-r from-cyan-400 to-blue-400 rounded-full"></span>
-                <span>LRGB+Ha hybrid processing</span>
-              </div>
-              <div className="flex items-center gap-3">
-                <span className="w-3 h-3 bg-gradient-to-r from-violet-400 to-purple-400 rounded-full"></span>
-                <span>Drizzle integration for maximum detail</span>
-              </div>
-              <div className="flex items-center gap-3">
-                <span className="w-3 h-3 bg-gradient-to-r from-amber-400 to-cyan-400 rounded-full"></span>
-                <span>Bortle 2-7 capture locations</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
     </div>
   )
 }
