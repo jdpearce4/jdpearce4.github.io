@@ -14,6 +14,15 @@ export default function Astrophotography() {
       exposure: '331 x 5min (Ha/OIII/SII), 19hr total'
     },
     {
+      id: 'soul-sho',
+      title: 'Soul Nebula (IC 1848) - SHO',
+      description: 'Emission nebula in Cassiopeia, companion to the Heart Nebula, in SHO narrowband',
+      thumbnail: '/photos/thumbnails/soul_nebula_sho_crop_thumb.jpg',
+      image: '/photos/soul_nebula_sho_crop.jpg',
+      dimensions: '2811x1330',
+      exposure: 'SHO narrowband'
+    },
+    {
       id: 'lagoon-sho',
       title: 'Lagoon Nebula (M8) - SHO',
       description: 'Spectacular emission nebula in Sagittarius with SHO narrowband processing',

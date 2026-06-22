@@ -26,10 +26,10 @@ export default function Writing() {
           ))}
         </div>
         
-        <div className="container mx-auto px-4 py-8 max-w-4xl relative z-10">
-          <div className="text-center mb-16">
-            <h1 className="text-6xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-violet-400 via-purple-400 to-violet-400 bg-clip-text text-transparent animate-fade-in-up">Creative Writing</h1>
-            <p className="text-2xl md:text-3xl text-gray-300 max-w-4xl mx-auto leading-relaxed animate-fade-in-up" style={{ animationDelay: '0.3s' }}>
+        <div className="content-container relative z-10">
+          <div className="text-center mb-20">
+            <h1 className="text-6xl md:text-hero heading-display mb-6 text-gradient-cosmic animate-fade-in-up">Creative Writing</h1>
+            <p className="text-xl md:text-2xl text-neutral-300 max-w-4xl mx-auto leading-relaxed font-light animate-fade-in-up" style={{ animationDelay: '0.3s' }}>
               Original short stories exploring science fiction, cosmic wonder, and human experience
             </p>
           </div>
@@ -39,8 +39,8 @@ export default function Writing() {
               <p className="text-gray-300 mb-8 text-xl">
                 Original short stories coming soon. Exploring themes of space exploration, cosmic mysteries, and the human condition.
               </p>
-              <div className="bg-gradient-to-br from-gray-800/30 to-gray-900/30 rounded-2xl p-8 max-w-2xl mx-auto border border-gray-700/30 backdrop-blur-sm">
-                <h3 className="text-2xl font-bold mb-6 text-violet-300">Upcoming Stories</h3>
+              <div className="card max-w-2xl mx-auto backdrop-blur-sm">
+                <h3 className="text-2xl heading-primary mb-6 text-accent-400">Upcoming Stories</h3>
                 <ul className="text-left space-y-3 text-gray-300">
                   <li className="flex items-center gap-3">
                     <span className="w-2 h-2 bg-gradient-to-r from-violet-400 to-purple-400 rounded-full"></span>
@@ -64,24 +64,24 @@ export default function Writing() {
           ) : (
             <div className="space-y-8 animate-fade-in-up" style={{ animationDelay: '0.6s' }}>
               {pieces.map((piece, index) => (
-                <article key={piece.slug} className="bg-gradient-to-br from-gray-800/30 to-gray-900/30 rounded-2xl p-8 border border-gray-700/30 backdrop-blur-sm hover:border-violet-500/30 transition-all duration-300">
+                <article key={piece.slug} className="card-hover p-8 backdrop-blur-sm hover:border-accent-500/30">
                   <Link href={`/writing/${piece.slug}`} className="group">
-                    <h2 className="text-3xl font-bold mb-4 text-white group-hover:text-violet-300 transition-colors">
+                    <h2 className="text-3xl heading-primary mb-4 text-white group-hover:text-accent-400 transition-colors">
                       {piece.title}
                     </h2>
                   </Link>
                   
-                  <div className="flex items-center gap-4 text-sm text-gray-400 mb-6">
-                    <span className="bg-violet-900/30 text-violet-300 px-3 py-1 rounded-full border border-violet-500/20">
+                  <div className="flex items-center gap-4 text-sm text-neutral-400 mb-6">
+                    <span className="bg-accent-900/30 text-accent-300 px-3 py-1 rounded-full border border-accent-500/20">
                       {piece.type}
                     </span>
-                    <time className="text-violet-400">{new Date(piece.date).toLocaleDateString()}</time>
+                    <time className="text-accent-400">{new Date(piece.date).toLocaleDateString()}</time>
                     {piece.tags.length > 0 && (
                       <div className="flex gap-2">
                         {piece.tags.map((tag) => (
                           <span 
                             key={tag} 
-                            className="bg-gray-700/30 text-gray-300 px-3 py-1 rounded-full text-xs border border-gray-600/20"
+                            className="bg-neutral-700/30 text-neutral-300 px-3 py-1 rounded-full text-xs border border-neutral-600/20"
                           >
                             {tag}
                           </span>
@@ -90,13 +90,13 @@ export default function Writing() {
                     )}
                   </div>
                   
-                  <p className="text-gray-300 mb-6 leading-relaxed text-lg">
+                  <p className="text-neutral-300 mb-6 leading-relaxed text-lg font-light">
                     {piece.excerpt}
                   </p>
                   
                   <Link 
                     href={`/writing/${piece.slug}`}
-                    className="inline-flex items-center gap-2 text-violet-400 hover:text-violet-300 font-medium group"
+                    className="btn-ghost inline-flex items-center gap-2 text-accent-400 hover:text-accent-300 font-medium group"
                   >
                     Read Story
                     <span className="group-hover:translate-x-1 transition-transform">→</span>

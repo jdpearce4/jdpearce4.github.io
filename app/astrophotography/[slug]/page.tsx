@@ -40,6 +40,31 @@ The Heart Nebula spans almost 2 degrees in the sky, covering an area four times 
       'Controlled via ZWO ASIAir Plus with Electronic Auto Focuser'
     ]
   },
+  'soul-sho': {
+    title: 'Soul Nebula (IC 1848) - SHO',
+    description: 'Emission nebula in Cassiopeia, companion to the Heart Nebula, in SHO narrowband',
+    longDescription: `The Soul Nebula (IC 1848), also cataloged as Sharpless 2-199 and Westerhout 5, is a large emission nebula located approximately 6,500 light-years away in the constellation Cassiopeia. It sits right beside its famous companion, the Heart Nebula (IC 1805), and together the pair are often referred to as the "Heart and Soul."
+
+The nebula is a vast star-forming region energized by the radiation and stellar winds of a young open cluster of massive stars embedded within it. These hot, luminous stars carve out cavities and sculpt the surrounding hydrogen gas into towering pillars and dense globules, several of which are visible silhouetted against the glowing background.
+
+This image was captured using the SHO (Sulfur-Hydrogen-Oxygen) narrowband technique, mapping the emission from ionized sulfur, hydrogen, and oxygen to the red, green, and blue channels respectively. The resulting palette - popularized by the Hubble Space Telescope - separates the different ionized gases by color, revealing the intricate structure of the nebula's shock fronts, dust lanes, and ionization boundaries even from light-polluted skies.
+
+Spanning roughly 2 degrees across the sky, the Soul Nebula is an active stellar nursery where new stars continue to form within its dense clouds of gas and dust.`,
+    image: '/photos/soul_nebula_sho_crop.jpg',
+    dimensions: '2811x1330',
+    exposure: 'SHO narrowband (Ha/OIII/SII)',
+    equipment: 'Redcat71 refractor (350mm) with ZWO ASI2600MM Pro camera on Advanced VX mount',
+    date: 'Backyard capture',
+    location: 'Backyard location',
+    technical: [
+      'ZWO 7nm narrowband filters: Ha, OIII, and SII',
+      'SHO color mapping for emission line contrast',
+      'Cropped composition framing the Soul Nebula complex',
+      'Guided using ZWO 30mm mini guide scope with ASI290MM mini camera',
+      'Controlled via ZWO ASIAir Plus with Electronic Auto Focuser',
+      'Processed in PixInsight'
+    ]
+  },
   'lagoon-sho': {
     title: 'Lagoon Nebula (M8) - SHO',
     description: 'Spectacular emission nebula in Sagittarius with SHO narrowband processing',

@@ -53,16 +53,16 @@ export default function Home() {
         
         {/* Hero content with cosmic animations */}
         <div className="relative z-10 text-center text-white px-4">
-          <h1 className="text-7xl md:text-8xl font-bold mb-8 drop-shadow-2xl animate-fade-in-up bg-gradient-to-r from-amber-200 via-cyan-200 to-violet-200 bg-clip-text text-transparent">
+          <h1 className="text-display md:text-hero heading-display mb-8 drop-shadow-2xl animate-fade-in-up text-gradient-cosmic">
             Welcome to My Universe
           </h1>
-          <p className="text-2xl md:text-3xl mb-10 max-w-4xl mx-auto drop-shadow-lg animate-fade-in-up leading-relaxed text-gray-200" style={{ animationDelay: '0.5s' }}>
+          <p className="text-xl md:text-2xl mb-10 max-w-4xl mx-auto drop-shadow-lg animate-fade-in-up leading-relaxed text-neutral-200 font-light" style={{ animationDelay: '0.5s' }}>
             Capturing the infinite beauty of deep space through precision astrophotography and scientific research
           </p>
           <div className="flex flex-col sm:flex-row gap-6 justify-center animate-fade-in-up" style={{ animationDelay: '1s' }}>
             <Link 
               href="/astrophotography" 
-              className="group bg-gradient-to-r from-amber-700 to-amber-600 hover:from-amber-600 hover:to-amber-500 text-white px-10 py-5 rounded-xl transition-all duration-300 text-xl font-medium backdrop-blur-sm shadow-2xl hover:shadow-amber-500/30 hover:scale-105 border border-amber-500/30"
+              className="btn-primary text-lg px-8 py-4 rounded-2xl backdrop-blur-sm shadow-cosmic hover:scale-105 transform transition-all duration-300"
             >
               <span className="flex items-center justify-center gap-2">
                 Explore Gallery
@@ -71,7 +71,7 @@ export default function Home() {
             </Link>
             <Link 
               href="/about" 
-              className="group border-2 border-gray-300/60 hover:bg-gray-300/10 hover:border-gray-300/80 text-white px-10 py-5 rounded-xl transition-all duration-300 text-xl font-medium backdrop-blur-sm shadow-2xl hover:scale-105"
+              className="btn-secondary text-lg px-8 py-4 rounded-2xl backdrop-blur-sm shadow-medium hover:scale-105 transform transition-all duration-300 border border-neutral-300/30"
             >
               <span className="flex items-center justify-center gap-2">
                 About
@@ -83,64 +83,64 @@ export default function Home() {
       </section>
 
       {/* Main content section with cosmic theme */}
-      <div className="bg-gradient-to-b from-gray-900 via-slate-900 to-black text-white py-20">
-        <div className="container mx-auto px-4">
-          <div className="text-center mb-16">
-            <h2 className="text-5xl font-bold mb-6 bg-gradient-to-r from-amber-400 via-cyan-400 to-violet-400 bg-clip-text text-transparent">
+      <div className="bg-gradient-to-b from-gray-900 via-slate-900 to-black text-white section-spacing">
+        <div className="content-container">
+          <div className="text-center mb-20">
+            <h2 className="text-5xl heading-display mb-6 text-gradient-cosmic">
               Professional Astrophotography & Research
             </h2>
-            <p className="text-xl text-gray-300 max-w-3xl mx-auto">
+            <p className="text-xl text-neutral-300 max-w-3xl mx-auto font-light leading-relaxed">
               Discover precision deep space imaging, technical analysis, and scientific exploration 
               of celestial objects through advanced astrophotography techniques.
             </p>
           </div>
 
-          <section className="grid md:grid-cols-3 gap-12">
-            <div className="group text-center p-8 bg-gradient-to-br from-amber-900/20 to-yellow-900/20 rounded-2xl border border-amber-500/20 hover:border-amber-400/40 transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-amber-500/20">
+          <section className="grid md:grid-cols-3 gap-8">
+            <div className="card-hover text-center p-8 bg-gradient-to-br from-amber-900/20 to-yellow-900/20 border-amber-500/20 hover:border-amber-400/40">
               <div className="text-6xl mb-6">🌌</div>
-              <h2 className="text-3xl font-bold mb-4 text-amber-300">Astrophotography</h2>
-              <p className="text-gray-300 mb-6 leading-relaxed">
+              <h3 className="text-3xl heading-primary mb-4 text-amber-300">Astrophotography</h3>
+              <p className="text-neutral-300 mb-6 leading-relaxed font-light">
                 High-resolution deep space imaging featuring emission nebulae, supernova remnants, 
                 and galactic structures captured with professional-grade equipment and processing.
               </p>
               <Link 
                 href="/astrophotography" 
-                className="group inline-flex items-center gap-2 bg-gradient-to-r from-amber-700 to-amber-600 hover:from-amber-600 hover:to-amber-500 text-white px-6 py-3 rounded-lg transition-all duration-300 font-medium"
+                className="btn-primary group"
               >
                 View Gallery
-                <span className="group-hover:translate-x-1 transition-transform">→</span>
+                <span className="group-hover:translate-x-1 transition-transform ml-2">→</span>
               </Link>
             </div>
             
-            <div className="group text-center p-8 bg-gradient-to-br from-cyan-900/20 to-blue-900/20 rounded-2xl border border-cyan-500/20 hover:border-cyan-400/40 transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-cyan-500/20">
+            <div className="card-hover text-center p-8 bg-gradient-to-br from-cyan-900/20 to-blue-900/20 border-cyan-500/20 hover:border-cyan-400/40">
               <div className="text-6xl mb-6">📡</div>
-              <h2 className="text-3xl font-bold mb-4 text-cyan-300">Scientific Blog</h2>
-              <p className="text-gray-300 mb-6 leading-relaxed">
+              <h3 className="text-3xl heading-primary mb-4 text-cyan-300">Scientific Blog</h3>
+              <p className="text-neutral-300 mb-6 leading-relaxed font-light">
                 Technical articles exploring image processing mathematics, astronomical data analysis, 
                 and computational methods in astrophotography with full LaTeX equation support.
               </p>
               <Link 
                 href="/blog" 
-                className="group inline-flex items-center gap-2 bg-gradient-to-r from-cyan-700 to-cyan-600 hover:from-cyan-600 hover:to-cyan-500 text-white px-6 py-3 rounded-lg transition-all duration-300 font-medium"
+                className="btn-primary group"
               >
                 Read Articles
-                <span className="group-hover:translate-x-1 transition-transform">→</span>
+                <span className="group-hover:translate-x-1 transition-transform ml-2">→</span>
               </Link>
             </div>
             
-            <div className="group text-center p-8 bg-gradient-to-br from-violet-900/20 to-purple-900/20 rounded-2xl border border-violet-500/20 hover:border-violet-400/40 transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-violet-500/20">
+            <div className="card-hover text-center p-8 bg-gradient-to-br from-violet-900/20 to-purple-900/20 border-violet-500/20 hover:border-violet-400/40">
               <div className="text-6xl mb-6">✍️</div>
-              <h2 className="text-3xl font-bold mb-4 text-violet-300">Creative Writing</h2>
-              <p className="text-gray-300 mb-6 leading-relaxed">
+              <h3 className="text-3xl heading-primary mb-4 text-violet-300">Creative Writing</h3>
+              <p className="text-neutral-300 mb-6 leading-relaxed font-light">
                 Original short stories exploring science fiction themes, cosmic wonder, 
                 and the intersection of human experience with the infinite expanse of space.
               </p>
               <Link 
                 href="/writing" 
-                className="group inline-flex items-center gap-2 bg-gradient-to-r from-violet-700 to-violet-600 hover:from-violet-600 hover:to-violet-500 text-white px-6 py-3 rounded-lg transition-all duration-300 font-medium"
+                className="btn-primary group"
               >
                 Read Stories
-                <span className="group-hover:translate-x-1 transition-transform">→</span>
+                <span className="group-hover:translate-x-1 transition-transform ml-2">→</span>
               </Link>
             </div>
           </section>
